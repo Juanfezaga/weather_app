@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@2.0.6/build/pure-min.css"
+      integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/ceaf38b879.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="index.css" type="text/css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="pure-g nav-bar__body">
+      <div class="pure-u-1-2"></div>
+      <div class="pure-u-1-2" id="form">
+        <form class="form-weather">
+          <i class="fa fa-search" id="search-icon" style="size: 20px"></i>
+          <input type="text" id="search-form__input" placeholder="Search City"/>
+          <span class="error-404">Error with your search!</span>
+        </form>
+      </div>
+    </div>
+    <div class="pure-g main-body__container">
+      <div class="pure-u-1" id="card-body"></div>
+    </div>
+    <footer></footer>
+    <script src="index.js"></script>
+  </body>
+</html>

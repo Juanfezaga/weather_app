@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Roboto:wght@700&display=swap");
+
+body {
+  background-color: #2a4494; 
+  color: white;
+}
+
+.nav-bar__body {
+  margin-top: 2%;
+}
+
+.form-weather {
+  text-align: center;
+  margin-right: 10%;
+}
+
+input[type="text"] {
+  font-family: "Fira Sans", sans-serif;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  padding: 10px;
+  outline: none;
+  padding-left: 40px;
+  font-size: large;
+  border: 1px solid black;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+input[type="text"]::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+input[type="text"]:focus {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+#search-icon {
+  position: absolute;
+  padding: 10px;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#form {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.form-weather {
+  display: inline-grid;
+}
+
+.main-body__container {
+  margin-top: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.card-weather {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+}
+
+.spinning-icon {
+  font-size: 100px;
+  color: white;
+}
+
+#loading-spinner {
+  display: flex;
+  justify-content: center;
+}
+
+.error-404 {
+  visibility: hidden;
+  color: red;
+  margin: 10px;
+  font-size: large;
+}
+
+.fadeInAnimation {
+  font-family: 'Roboto', sans-serif !important;
+  animation: fadeIn linear 4s;
+  -webkit-animation: fadeIn linear 4s;
+}
+
+.fadeInAnimationF {
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 45px;
+  animation: fadeIn linear 4s;
+  -webkit-animation: fadeIn linear 4s;
+  text-transform: capitalize;
+}
+
+.fadeInAnimationT {
+  font-family: 'Roboto', sans-serif !important;
+  animation: fadeIn linear 2s;
+  -webkit-animation: fadeIn linear 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.show-relevant {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.show-relevant > span {
+  margin: 5px;
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.temperature {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  font-size: 9rem;
+}
+
+.relevant-parameters > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location {
+  font-size: 45px;
+}
